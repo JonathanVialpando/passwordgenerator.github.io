@@ -1,12 +1,31 @@
 <!DOCTYPE html>
     <head>
-        <title>Password Generator</title>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <title>Password</title>
     </head>
     <body>
-        <form>
-            <p>Enter your password to check strength:</p>
-            <p> <input name="passwordCheck"> </p>
-            <p> <input type="submit" class="button" value="Check"> </p>
-        </form>
+        <div class="container-check">
+            <form method="POST">
+                <input type="hidden" name="form" value="check">
+                <p>Enter your password to check strength:</p>
+                <p> <input name="passwordCheck" type="password"> </p>
+                <p> <input type="submit" class="button" value="Check"> </p>
+            </form>
+        </div>
+        <div class="container-generate">
+            <form method="POST" class="generate">
+                <input type="hidden" name="form" value="generate">
+                <p>Generate me a 
+                    <select name="strength">
+                        <option value="strong">strong</option>
+                        <option value="medium">medium</option>
+                        <option value="weak">weak</option>
+                </select> 
+                password</p>
+                <p> <input type="submit" class="button" value="Generate"> </p>
+            </form>
+        </div>
     </body>
 </html>

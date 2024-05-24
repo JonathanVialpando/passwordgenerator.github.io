@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <title>Password Results</title>
+    </head>
+    <body>
+       <p>Results: {{finalMSG| safe}} </p>
+       <p><a href="/">Click here to go home.</a></p>
+    </body>
+</html>

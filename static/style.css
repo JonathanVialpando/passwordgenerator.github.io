@@ -1,0 +1,13 @@
+.container-check{
+    border-style: solid;
+    text-align: center;
+    margin: auto;
+    color:brown;
+}
+.container-generate{
+    padding: 30px;
+    border-style: solid;
+    text-align: center;
+    margin: auto;
+    color:brown;
+}
